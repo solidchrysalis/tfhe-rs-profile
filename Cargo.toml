@@ -1,0 +1,11 @@
+[package]
+name = "matrix_profile" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+
+[dependencies]
+tfhe = {version = "*", features = ["boolean", "shortint", "integer"]}
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
